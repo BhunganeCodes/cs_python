@@ -10,7 +10,7 @@ def is_valid(s):
     return two_letters(s) and correct_length(s) and numbers_and_letters(s) and numbers_end(s)
 
 def two_letters(s):
-    return 2 <= len(s) and s[0].isalpha() and s[1].isalpha()
+    return 2 <= len(s) and s[0:2].isalpha()
 
 def correct_length(s):
     return 2 <= len(s) <= 6
