@@ -12,7 +12,7 @@ def main():
     elif len(sys.argv) == 3:
         flag, font = sys.argv[1], sys.argv[2]
 
-        if flag not in ["-f", "-font"]:
+        if flag not in ["-f", "--font"]:
             sys.exit("Invalid usage")
         if font not in fonts:
             sys.exit("Font does not exist")
